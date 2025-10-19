@@ -13,9 +13,9 @@ function YourBotArmy({ army, onRelease, onDischarge }) {
           ) : (
             <div className="d-flex flex-column gap-3">
               {army.map(bot => (
-                <BotCard 
+                <BotCard
                   key={bot.id}
-                  bot={bot} 
+                  bot={bot}
                   onClick={() => onRelease(bot)}
                   onDischarge={() => onDischarge(bot)}
                   showArmyActions={true}

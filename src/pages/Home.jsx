@@ -29,7 +29,7 @@ function Home() {
       alert(`You Already Have a ${bot.bot_class} Class Bot in Your Army!`);
       return;
     }
-    
+
     setArmy([...army, bot]);
     setSelectedBot(null);
   };
@@ -52,7 +52,7 @@ function Home() {
       })
   };
 
-  // detailed view of a bot in BotSpecs
+  // view a bot in BotSpecs
   const viewBotSpecs = (bot) => {
     setSelectedBot(bot);
   };
@@ -62,7 +62,7 @@ function Home() {
     setSelectedBot(null);
   };
 
-  // filter by class and sort by criteria bots based on current state
+  // filter by class and sort by criteria
   const getFilteredAndSortedBots = () => {
     let filtered = [...bots];
 

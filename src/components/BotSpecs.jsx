@@ -16,8 +16,8 @@ function BotSpecs({ bot, onBack, onEnlist }) {
       <div className="card-body">
         <div className="row">
           <div className="col-md-4">
-            <img 
-              src={bot.avatar_url} 
+            <img
+              src={bot.avatar_url}
               alt={bot.name}
               className="img-fluid rounded"
             />
@@ -28,7 +28,7 @@ function BotSpecs({ bot, onBack, onEnlist }) {
               {bot.bot_class}
             </span>
             <p className="lead">{bot.catchphrase}</p>
-            
+
             <div className="row mt-4">
               <div className="col-4">
                 <div className="card bg-light">

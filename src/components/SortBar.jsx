@@ -15,7 +15,7 @@ function SortBar({ sortBy, setSortBy, filterClass, setFilterClass }) {
         <div className="row align-items-center">
           <div className="col-md-6 mb-3 mb-md-0">
             <label className="form-label fw-bold">Sort By Criteria:</label>
-            <select 
+            <select
               className="form-select"
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
@@ -26,7 +26,7 @@ function SortBar({ sortBy, setSortBy, filterClass, setFilterClass }) {
               <option value="armor">Armor</option>
             </select>
           </div>
-          
+
           <div className="col-md-6">
             <label className="form-label fw-bold">Filter by Class:</label>
             <div className="d-flex flex-wrap gap-2">

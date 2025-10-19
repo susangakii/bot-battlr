@@ -2,7 +2,7 @@ function BotCard({ bot, onClick, onDischarge, showArmyActions }) {
   const handleDischarge = (e) => {
     e.stopPropagation();
     if (onDischarge) {
-      onDischarge();  
+      onDischarge();
     }
   };
 
@@ -24,9 +24,9 @@ function BotCard({ bot, onClick, onDischarge, showArmyActions }) {
 
   return (
     <div className="card h-100 shadow-sm" style={{ cursor: showArmyActions ? 'default' : 'pointer' }} onClick={showArmyActions ? undefined : onClick}>
-      <img 
-        src={bot.avatar_url} 
-        className="card-img-top" 
+      <img
+        src={bot.avatar_url}
+        className="card-img-top"
         alt={bot.name}
         style={{ height: '200px', objectFit: 'cover' }}
       />
@@ -41,16 +41,16 @@ function BotCard({ bot, onClick, onDischarge, showArmyActions }) {
           <span>⚔️ {bot.damage}</span>
           <span>🛡️ {bot.armor}</span>
         </div>
-        
+
         {showArmyActions && (
           <div className="d-grid gap-2">
-            <button 
+            <button
               className="btn btn-warning btn-sm"
               onClick={handleRelease}
             >
               Release from Army
             </button>
-            <button 
+            <button
               className="btn btn-danger btn-sm"
               onClick={handleDischarge}
             >

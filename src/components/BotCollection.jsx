@@ -7,8 +7,8 @@ function BotCollection({ bots, onBotClick }) {
       <div className="row g-3">
         {bots.map(bot => (
           <div key={bot.id} className="col-md-6 col-lg-4">
-            <BotCard 
-              bot={bot} 
+            <BotCard
+              bot={bot}
               onClick={() => onBotClick(bot)}
             />
           </div>
